@@ -1,0 +1,20 @@
+<div>
+  <h2>Edit Employee</h2>
+  <button (click)="back()" class="back">Back</button>
+  <div class="form">
+    <div class="form-grup">
+      <label>Employee ID:</label>
+      <input [(ngModel)]="employee.id" placeholder="Input Employee ID" />
+    </div>
+    <div class="form-grup">
+      <label>Employee Name:</label>
+      <input [(ngModel)]="employee.name" placeholder="Input Employee Name" />
+    </div>
+    <div class="form-grup">
+      <label>Department:</label>
+      <input [(ngModel)]="employee.department" placeholder="Input Department" />
+    </div>
+    <button (click)="updateEmployee(employee._id)">Save</button>
+    <button (click)="deleteEmployee(employee._id)" class="right">Delete</button>
+  </div>
+</div>

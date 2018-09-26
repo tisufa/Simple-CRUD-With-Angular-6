@@ -1,0 +1,39 @@
+
+
+*{
+    font-family: sans-serif
+}
+
+div.form{
+    width: 300px;
+}
+
+div.form-grup{
+    margin: 10px 0;
+}
+
+input{
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #e0e0e0;
+    margin-top: 5px;
+    outline: none;
+    padding: 5px;
+}
+
+label{
+    font-size: 12px;
+}
+
+button{
+    border-radius: 2px;
+    border: 1px solid #808080;
+}
+
+button.back{
+    background: transparent !important;
+    border: none;
+    color: lightseagreen;
+    text-decoration: underline;
+    cursor: pointer
+}

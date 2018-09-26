@@ -1,0 +1,24 @@
+<h2>Employee List</h2>
+
+<div>
+  <button (click)="add()">
+    + New Employee
+  </button>
+</div>
+
+<br/>
+<table id="customers">
+  <tr>
+    <th>Employee ID</th>
+    <th>Employee Name</th>
+    <th>Department</th>
+    <th style="text-align:center">Actions</th>
+  </tr>
+  <tr *ngFor="let e of employees; let i=index;">
+    <td>{{e.id}}</td>
+    <td>{{e.name}}</td>
+    <td>{{e.department}}</td>
+    <td class="tengah"><button class="edit" title="Edit Employee"
+      (click)="editEmployee(e._id)">[Edit]</button></td>
+  </tr>
+</table>
